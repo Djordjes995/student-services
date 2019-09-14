@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.login-title {
+    padding-top: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.form-input {
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #f7f7f7;
+    width: 30rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.input-row {
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-top: 0.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.login-btn {
+    margin-top: 1rem;
+    background-color: #38ba9b;
+    font-size: 0.8rem;
+    padding: 1rem 2.1rem;
+    border: none;
+    border-radius: .25rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s;
+}
