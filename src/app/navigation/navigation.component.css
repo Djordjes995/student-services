@@ -1,0 +1,18 @@
+.navigation {
+    background-color: #2a785f;
+    margin: 0 -15px;
+}
+
+.nav-item {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.8rem;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background-color: #3daf8a;
+}

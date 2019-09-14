@@ -1,0 +1,57 @@
+<div class="container exam-container">
+    <h1 class="login-title">Promena prijave</h1>
+    <div class="table-container">
+        <div class="row input-row margin-row">
+            <div class="col-12">
+                <label>Izaberite rok</label>
+                <select class="form-input">
+                    <option value="februar">Februar</option>
+                    <option value="jun">Jun</option>
+                    <option value="septembar">Septembar</option>
+                </select>
+            </div>
+        </div>
+        <div class="row input-row margin-row">
+            <div class="col-12">
+                <label>Izaberite predmet</label>
+                <select class="form-input">
+                    <option value="softveri">Softveri</option>
+                    <option value="matematika">Matematika</option>
+                    <option value="pis">PIS</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="table">
+                    <div class="row th-row">
+                        <div class="col-3">
+                            <div class="th">Ime</div>
+                        </div>
+                        <div class="col-3">
+                            <div class="th">Prezime</div>
+                        </div>
+                        <div class="col-3">
+                            <div class="th">Broj indeksa</div>
+                        </div>
+                        <div class="col-3">
+                            <div class="th">Ocena</div>
+                        </div>
+                    </div>
+                    <div class="row cell-row" *ngFor="let student of students">
+                        <div class="col-3 cell">{{student.name}}</div>
+                        <div class="col-3 cell">{{student.lastname}}</div>
+                        <div class="col-3 cell">{{student.index}}</div>
+                        <div class="col-3 cell"><input type="number" class="grade" value="{{student.grade}}"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-right">
+                            <button class="login-btn table-btn">Sačuvaj izmene</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,44 @@
+<div class="container stud-container">
+    <app-navigation></app-navigation>
+    <h1 class="login-title">prijava ispita</h1>
+    <div class="table-container">
+        <div class="row input-row margin-row">
+            <div class="col-12">
+                <label>Izaberite rok</label>
+                <select class="form-input">
+                    <option value="februar">Februar</option>
+                    <option value="jun">Jun</option>
+                    <option value="septembar">Septembar</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="table">
+                    <div class="row th-row">
+                        <div class="col-3">
+                            <div class="th">Naziv ispita</div>
+                        </div>
+                        <div class="col-3">
+                            <div class="th">Katedra</div>
+                        </div>
+                        <div class="col-3">
+                            <div class="th">ESPB</div>
+                        </div>
+                    </div>
+                    <div class="row cell-row" *ngFor="let exam of exams">
+                        <div class="col-3 cell">{{exam.name}}</div>
+                        <div class="col-3 cell">{{exam.department}}</div>
+                        <div class="col-3 cell">{{exam.espb}}</div>
+                        <div class="col-3 cell"><button class="login-btn groovy-btn">prijavi</button></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-right">
+                            <button class="login-btn table-btn">Sačuvaj izmene</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+.stud-container {
+    background-color: #38ba9b;
+    min-height: 100vh;
+}
+
+
+
+.news-container {
+    margin-top: 4rem;
+    padding: 0 5rem;
+}
+
+.news {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    border: 1px solid white;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.news-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.news-header p {
+    display: inline-block;
+}
+
+.news-title {
+    font-size: 1.2rem;
+}
+
+.news-date {
+    font-size: 1rem;
+}
